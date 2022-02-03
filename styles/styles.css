@@ -1,0 +1,110 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #242635;
+
+}
+
+.header{
+    
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 0 0.4rem;
+      
+}
+
+.navegacion{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100%;
+    /* margin-left: -100%; */
+    transition: all 0.4s linear;
+    background-color:rgba(0, 0, 0, 0.7);
+    z-index: 100; /*para que la nav este por encima de cualquier elemento*/
+}
+
+.navegacion .show{
+    margin-left: 0;
+}
+
+.navLinks{
+    background-color: #34B0BE;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+}
+
+.linkItem{
+    color: #444444;
+    text-decoration: none;
+    margin-top: 20px ;
+    font-weight: bold;
+    position: relative;
+}
+
+.link-item::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+  }
+  .link-item:hover::after {
+    width: 100%;
+  }
+
+.buttom-menu{
+    z-index: 101;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+   
+}
+
+.buttom-menu span{
+    width: 30px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #444444;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+}
+
+.buttom-menu .close span{
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+
+}
+
+.buttom-menu .close span:nth-child(2){
+    transform: rotate(-45deg) translate(-8px,5px);
+}
+
+.buttom-menu .close span:nth-child(3){
+    display: none;
+}
+
+
