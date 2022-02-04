@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
 
 :root{
-    --backgroundColor : #242635;
+    --backgroundColor : #0a0c18;
     --grayColor: #D1CECA;
     --white: #ffffff;
     --bluelight:#32b0be;
     --fuente: 'Montserrat', sans-serif;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +15,9 @@
 
 body{
     background-color: var(--backgroundColor);
+    font-family: var(--fuente);
+
+
 }
   
   .main-header{
@@ -24,6 +28,7 @@ body{
     background-color: var(--backgroundColor);
     position: fixed;
     width: 100%;
+    top:0;
   }
 
   
@@ -51,7 +56,6 @@ body{
     height: 100%;
     align-items: center;
     justify-content: flex-start;
-    font-family: var(--fuente);
     font-size: 13px;
     font-weight:400;
   }
@@ -91,7 +95,7 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-right: 5px;
+    margin-right: 30px;
   }
   
   .button-menu span{
@@ -118,8 +122,66 @@ body{
   .button-menu.close span:nth-child(3){
     display: none;
   }
+
+
+  .main{
+    margin-top:50px;
+    padding: 0 15px;
+  }
   
+  .home-name{
+    padding: 10px 0;
+    width: 180px;
+    border-bottom:solid 4px var(--white);
+  }
+  .home-flex{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .home-name>.title{
+    text-transform:capitalize;
+    font-size: 35px;
+    font-weight:400;
+    color: var(--white);
+    line-height: 50px;
+  }
   
+  .home-name>.title >span{
+    
+    font-weight:700;
+    color: var(--bluelight);
+    letter-spacing: 2px; 
+    font-size: 55px;
+   }
+
+   .home-programmer{
+     padding: 17px 0;
+   }
+   .home-programmer>.title2{
+     text-transform: capitalize;
+     color: var(--white);
+     font-size: 25px;
+     font-weight: 400;
+   }
+
+   .home-experience{
+    padding: 30px 0;
+
+   }
+  
+   .home-experience>.title2{
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 400;
+  }
+
+  .home-experience>.title2 >span{
+    
+    font-weight:700;
+    color: var(--bluelight);
+   }
+
   @media screen and (min-width:1123px) {
     .button-menu{
       display: none;
