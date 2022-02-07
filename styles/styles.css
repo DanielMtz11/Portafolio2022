@@ -13,6 +13,8 @@
     padding: 0;
 }
 
+
+
 body{
     background-color: var(--backgroundColor);
     font-family: var(--fuente);
@@ -95,7 +97,7 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-right: 30px;
+    margin-right: 12px;
   }
   
   .button-menu span{
@@ -129,9 +131,16 @@ body{
     padding: 0 15px;
   }
   
+  .home-content{
+    width: 160px;
+  }
+
+  .home{
+    position: relative;
+  }
   .home-name{
     padding: 10px 0;
-    width: 180px;
+    width: 140px;
     border-bottom:solid 4px var(--white);
   }
   .home-flex{
@@ -141,32 +150,33 @@ body{
   }
   .home-name>.title{
     text-transform:capitalize;
-    font-size: 35px;
+    font-size: 25px;
     font-weight:400;
     color: var(--white);
-    line-height: 50px;
+    line-height: 40px;
   }
   
   .home-name>.title >span{
     
     font-weight:700;
     color: var(--bluelight);
-    letter-spacing: 2px; 
-    font-size: 55px;
+    letter-spacing: 1.8px; 
+    font-size: 45px;
    }
 
    .home-programmer{
-     padding: 17px 0;
+     padding: 12px 0;
    }
    .home-programmer>.title2{
      text-transform: capitalize;
      color: var(--white);
-     font-size: 25px;
+     font-size: 20px;
      font-weight: 400;
    }
 
    .home-experience{
-    padding: 30px 0;
+    padding: 20px 0 10px 0 ;
+    padding-left: 10px;
 
    }
   
@@ -174,6 +184,9 @@ body{
     text-transform: capitalize;
     color: var(--white);
     font-weight: 400;
+    font-size: 20px;
+    padding-top: 5px;
+
   }
 
   .home-experience>.title2 >span{
@@ -182,6 +195,70 @@ body{
     color: var(--bluelight);
    }
 
+   .home-social>div{
+     display: flex;
+     justify-content: space-around;
+      /* flex-direction: column; */
+    }
+
+   .home-social>div>img{
+     background-color: var(--grayColor);
+     padding: 3px;
+     width: 20px;
+     border-radius: 25%;
+   }
+
+   .home-photo{
+     /* position: absolute;
+     bottom: 160px; */
+   }
+   .home-photo>img{
+     
+     position: absolute;
+     top:30px;
+     left: 10vw;
+      padding: 5px;
+    z-index: 2;
+  }
+
+  .span{
+
+    position: absolute;
+    top:35px;
+    left: 13vw;
+    padding: 150px;
+    opacity: 25%;
+    border-radius: 50%;
+    background-color: var(--grayColor);
+  }
+  @media screen and (min-width:450px) {
+
+    .home-name{
+      width: 180px;
+    }
+    .home-name>.title{
+      font-size: 35px;
+      line-height: 50px;
+    }
+
+    .home-name>.title >span{
+    
+      letter-spacing: 2px; 
+      font-size: 55px;
+     }
+
+     .home-programmer>.title2, .home-experience>.title2{
+      font-size: 25px;
+     }
+
+     .home-social>div>img{
+      padding: 5px;
+      width: 25px;
+  
+    }
+   
+  }
+  
   @media screen and (min-width:1123px) {
     .button-menu{
       display: none;
