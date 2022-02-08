@@ -254,6 +254,11 @@ body{
       border-radius: 50%;
       background-color: var(--white)
     }
+    
+    .home-photo>.home-icons>div>#linkedin ,#git {
+      opacity: 70%;
+    }
+
 
 
   @media screen and (min-width:380px) {
