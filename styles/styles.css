@@ -31,6 +31,7 @@ body{
     position: fixed;
     width: 100%;
     top:0;
+    z-index: 300;
   }
 
 
@@ -259,7 +260,28 @@ body{
       opacity: 70%;
     }
 
+    .home-aboutme{
+      margin-top: 170px;
+      padding-top: 10px;
+      
+    }
+    .home-aboutme>h3{
+    text-transform: capitalize;
+    color: var(--bluelight);
+    font-weight: 700;
+    text-align: center;
+    font-size: 22px;
+    padding: 5px;
+    }
 
+    .home-aboutme>p{
+
+      color: var(--white);
+      font-weight: 400;
+      text-align: center;
+      font-size: 15px;
+      padding: 5px;
+      }
 
   @media screen and (min-width:380px) {
 
@@ -290,6 +312,7 @@ body{
       left: 12vw;
       padding: 160px;
     }
+    
 
 
     .home-icons{
@@ -297,7 +320,15 @@ body{
       left: 12vw;
       width: 75vw;
     }
+    .home-aboutme
+    {
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+
+ 
   }
+
 
   @media screen and (min-width:420px) {
     .home-icons{
@@ -442,6 +473,91 @@ body{
       z-index: 5;
     }
 
+  }
+
+  @media screen and (min-width:660px) {
+    .home-photo>.img420px{
+    display: none;
+    }
+
+
+    .home-photo>.img450px{
+      display: block;
+      position: absolute;
+      top:6vh;
+      left:15vw;
+      z-index: 5;
+      }
+  }
+
+  @media screen and (min-width:680px) {
+    .home-photo>.img450px{
+      left:17vw;
+      }
+  }
+
+  @media screen and (min-width:704px) {
+    .home-photo>.img450px{
+      left:17vw;
+      }
+
+      .span{
+        top:-5vh;
+        padding: 35vw;
+        /* padding: 200px; */
+        left: 15vw;
+      }
+  }
+
+
+  @media screen and (min-width:750px) {
+    .home-photo>.img450px{
+      left:18vw;
+      }
+
+  
+  }
+
+  
+  @media screen and (min-width:775px) {
+    .home-photo>.img450px{
+      display: none;
+      }
+  
+      .home-photo>.img500px{
+        display: block;
+        left:16vw;
+        position: absolute;
+        z-index: 5;
+        top:0;
+
+        }
+  
+  }
+
+  @media screen and (min-width:775px) {
+    .home-photo>.img450px{
+      display: none;
+      }
+  
+      .home-photo>.img500px{
+        display: block;
+        left:15vw;
+        position: absolute;
+        z-index: 5;
+        top:0;
+
+        }
+  
+  }
+
+  @media screen and (min-width:790px) {
+  
+  
+      .home-photo>.img500px{
+        left:17vw;
+        }
+  
   }
 
   @media screen and (min-width:1123px) {
