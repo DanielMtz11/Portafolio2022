@@ -216,7 +216,7 @@ body{
       z-index: 2;
     /* display:none; */
   }
-  .home-photo> .img310px, .img320px, .img400px, .img420px{
+  .home-photo> .img310px, .img320px, .img400px, .img420px , .img450px, .img500px{
     display: none;
   }
 
