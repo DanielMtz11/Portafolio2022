@@ -162,16 +162,16 @@ body{
     color: var(--bluelight);
     letter-spacing: 1.8px;
     font-size: 45px;
-   }
+  }
 
-   .home-programmer{
-     padding: 12px 0;
-   }
-   .home-programmer>.title2{
-     text-transform: capitalize;
-     color: var(--white);
-     font-size: 20px;
-     font-weight: 400;
+  .home-programmer{
+    padding: 12px 0;
+  }
+  .home-programmer>.title2{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
    }
 
    .home-experience{
@@ -231,7 +231,7 @@ body{
   }
 
 
-    
+
     .home-icons{
       z-index: 7;
       bottom: -200px;
@@ -239,15 +239,27 @@ body{
       width: 75%;
       position: absolute;
       border-radius: 15px;
-      padding: 35px 10px;
-      background-color: var(--grayColor);
+      /* opacity: 25%; */
+      padding: 15px 10px;
+      background-color:  #494d55;
     }
-    
-  
+
+    .home-icons-flex{
+      display: flex;
+      justify-content: space-around;
+    }
+    .home-photo>.home-icons>div>.home-icons-hijo {
+      width: 40px;
+      padding: 10px;
+      border-radius: 50%;
+      background-color: var(--white)
+    }
+
+
   @media screen and (min-width:380px) {
-  
+
     .home-icons{
-    
+
       width: 68vw;
     }
   }
@@ -273,22 +285,22 @@ body{
       left: 12vw;
       padding: 160px;
     }
-    
-    
+
+
     .home-icons{
       bottom: -240px;
       left: 12vw;
       width: 75vw;
     }
   }
-  
+
   @media screen and (min-width:420px) {
     .home-icons{
-    
+
       width: 71vw;
     }
   }
-  
+
   @media screen and (min-width:450px) {
 
     .home-name{
@@ -346,9 +358,9 @@ body{
 
   @media screen and (min-width:460px){
     .home-photo>.img400px{
-    
+
       left:8vw;
-      
+
     }
     .span{
 
@@ -356,12 +368,12 @@ body{
       padding: 170px;
     }
   }
-  
+
   @media screen and (min-width:485px){
     .home-photo>.img400px{
-    
+
       left:12vw;
-      
+
     }
     .span{
 
@@ -373,7 +385,7 @@ body{
       width: 65vw;
     }
   }
-  
+
   @media screen and (min-width:500px) {
     .home-icons{
       /* bottom: -250px; */
@@ -384,19 +396,19 @@ body{
 
   @media screen and (min-width:540px) {
     .home-icons{
-  
+
       width: 57vw;
     }
-    
+
   }
   @media screen and (min-width:570px) {
 
     .home-photo>.img400px{
-      display: none;       
+      display: none;
     }
 
     .home-photo>.img420px{
-      display: block; 
+      display: block;
       position: absolute;
       top:10vh;
       left:14vw;
@@ -418,7 +430,7 @@ body{
 
   @media screen and (min-width:600px) {
     .home-photo>.img420px{
-      display: block; 
+      display: block;
       position: absolute;
       top:10vh;
       left:16vw;
@@ -462,6 +474,6 @@ body{
         margin-right: 2rem;
     }
 
-   
-  
+
+
   }
