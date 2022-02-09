@@ -262,7 +262,7 @@ body{
 
     .aboutme{
       margin-top: 230px;
-      padding-top: 10px;
+      padding: 10px 2px;
       
     }
 
@@ -272,7 +272,7 @@ body{
     font-weight: 700;
     text-align: center;
     font-size: 22px;
-    padding: 5px;
+    padding-bottom: 15px;
     }
 
     .aboutme>p{
@@ -281,34 +281,29 @@ body{
       font-weight: 400;
       text-align:justify;
       font-size: 15px;
-      padding: 10px 15px;
+      /* padding: 10px 15px; */
 
       }
 
       .servicios{
-        padding: 10px 15px;
+        padding: 10px 2px;
         margin-top: 30px;
 
       }
 
-
+ 
       .servicios>h3{
         text-transform: capitalize;
         color: var(--bluelight);
         font-weight: 700;
         text-align: center;
         font-size: 22px;
-        padding: 5px;
+        padding-bottom: 15px;
         }
-      .servicios>p{
 
-        color: var(--white);
-        font-weight: 400;
-        text-align:justify;
-        font-size: 15px;
-        padding: 10px 15px;
-  
-        }
+
+      
+        
 
 
       .row{
