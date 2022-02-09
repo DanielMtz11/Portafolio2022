@@ -207,15 +207,16 @@ body{
      padding: 3px;
      width: 20px;
      border-radius: 25%;
+     opacity: 90%;
+
    }
+
 
    .home-photo>.img300px{
       position: absolute;
       top:30px;
-      left: 7vw;
-      padding: 5px;
+      left: 4vw;
       z-index: 2;
-    /* display:none; */
   }
   .home-photo> .img310px, .img320px, .img400px, .img420px , .img450px, .img500px{
     display: none;
@@ -223,9 +224,9 @@ body{
 
   .span{
     position: absolute;
-    top:35px;
+    top:20px;
     left: 12vw;
-    padding: 140px;
+    padding: 120px;
     opacity: 25%;
     border-radius: 50%;
     background-color: var(--grayColor);
@@ -241,7 +242,7 @@ body{
       position: absolute;
       border-radius: 15px;
       /* opacity: 25%; */
-      padding: 15px 10px;
+      padding:  5px;
       background-color:  #494d55;
     }
 
@@ -251,14 +252,14 @@ body{
     }
     .home-photo>.home-icons>div>.home-icons-hijo {
       width: 40px;
-      padding: 10px;
+      padding: 4px;
       border-radius: 50%;
+      opacity: 70%;
+
       background-color: var(--white)
     }
     
-    .home-photo>.home-icons>div>#linkedin ,#git {
-      opacity: 70%;
-    }
+    
 
     .aboutme{
       margin-top: 230px;
@@ -418,7 +419,23 @@ body{
           margin-left: 20px;
         }
       
-     
+  @media screen and (min-width:360px) {
+        
+   .home-photo>.img300px{
+    top:30px;
+    left: 7vw;
+    padding: 5px;
+  /* display:none; */
+}
+
+
+.span{
+  top:35px;
+  left: 12vw;
+  padding: 140px;
+}
+  }
+  
   @media screen and (min-width:380px) {
 
     .home-icons{
@@ -462,6 +479,17 @@ body{
       margin-top: 290px;
     }
 
+    .home-icons{
+      bottom: -260px;
+      left: 12vw;
+      padding: 12px 10px;
+    }
+  
+    .home-photo>.home-icons>div>.home-icons-hijo {
+      width: 35px;
+      padding: 10px;
+  
+    }
   }
 
 
@@ -520,7 +548,7 @@ body{
 
       .home-icons{
 
-        bottom: -250px;
+        /* bottom: -250px; */
         left: 18vw;
         width: 65vw;
       }
@@ -593,7 +621,7 @@ body{
       left: 16vw;
     }
     .home-icons{
-      bottom: -320px;
+      bottom: -340px;
       left: 20vw;
       width: 60vw;
     }
@@ -642,40 +670,29 @@ body{
       }
 
       .span{
-        top:-5vh;
+        top:0vh;
         padding: 35vw;
         /* padding: 200px; */
-        left: 15vw;
+        left: 16vw;
       }
   }
-
-
-  @media screen and (min-width:750px) {
+  @media screen and (min-width:735px) {
     .home-photo>.img450px{
       left:18vw;
       }
-
-  
   }
 
-  
-  @media screen and (min-width:775px) {
+  @media screen and (min-width:755px) {
     .home-photo>.img450px{
-      display: none;
+      left:19vw;
       }
-  
-      .home-photo>.img500px{
-        display: block;
-        left:16vw;
-        position: absolute;
-        z-index: 5;
-        top:0;
 
-        }
   
   }
 
-  @media screen and (min-width:775px) {
+  
+  @media screen and (min-width:774px) {
+   
     .home-photo>.img450px{
       display: none;
       }
@@ -685,19 +702,42 @@ body{
         left:15vw;
         position: absolute;
         z-index: 5;
-        top:0;
+        top:45px;
 
         }
   
+  
+     
+
+        .span{
+          top:1vh;
+          padding: 33vw;
+          left: 17vw;
+        }
+
+        .home-icons{
+          bottom: -390px;
+          left: 20vw;
+          width: 60vw;
+        }
+  
+  
   }
 
+  
   @media screen and (min-width:790px) {
   
   
       .home-photo>.img500px{
         left:17vw;
         }
-  
+
+        /* .home-icons{
+          bottom: 00px;
+          left: 20vw;
+          width: 60vw;
+        }
+   */
   }
 
   @media screen and (min-width:1123px) {
