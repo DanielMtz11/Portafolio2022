@@ -212,13 +212,14 @@ body{
    }
 
 
-   .home-photo>.img300px{
-      position: absolute;
-      top:30px;
-      left: 4vw;
-      z-index: 2;
-  }
-  .home-photo> .img310px, .img320px, .img400px, .img420px , .img450px, .img500px{
+
+  .home-photo>.img270px{
+    position: absolute;
+    top:30px;
+    left: 4vw;
+    z-index: 2;
+}
+  .home-photo> .img300px, .img310px, .img320px, .img400px, .img420px , .img450px, .img500px{
     display: none;
   }
 
