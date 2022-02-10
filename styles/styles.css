@@ -879,6 +879,7 @@ body{
     top:-1vh;
     padding: 30vw;
     left: 19vw;
+    
   }
 
   .home-icons {
@@ -950,8 +951,113 @@ padding: 20px 0;  }
     }  
     .home-photo > .home-icons > div > .home-icons-hijo {
       width: 7vw;
-      padding: 10px 30px;
+      padding: 8px 30px;
       border-radius: 10px;
     }  
+
+    .span {
+      top: -4vh;
+  
+    }
  
   }
+
+  @media screen and (min-width:1080px) {
+    
+        .home-programmer {
+          width: 350px;
+        }
+        .home-photo>.img500px{
+          display: none;
+          }
+
+        .home-photo>.img530px{
+          position: absolute;
+          display: block;
+          top:20px;
+          left:23vw;
+          z-index: 7;
+          }
+    
+  }
+
+  @media screen and (min-width:1080px) {
+  
+    .home-photo>.img530px{
+      left:24vw;
+      }
+  }
+  @media screen and (min-width:1164px) {
+    .home-photo>.img530px{
+      left:25vw;
+      }
+  }
+
+  
+
+
+  @media screen and (min-width:1182px) {
+  
+    .main {
+      margin-top: 110px;
+    }
+      .span {
+        top: -6vh;
+      }
+  }
+
+  @media screen and (min-width:1222px) {
+    .main {
+      margin-top: 130px;
+    }
+    .span {
+      top: -8vh;
+    }
+
+    .home-photo>.img530px{
+      left:26vw;
+      }
+
+  }
+
+  @media screen and (min-width:1266px) {
+
+    .main {
+      margin-top: 145px;
+    }
+    .span {
+      top: -10vh;
+    }
+    .home-photo>.img530px{
+      left:27vw;
+      }
+  }
+
+  @media screen and (min-width:1300px) {
+    .main {
+      margin-top: 160px;
+    }
+    .span {
+      top: -12vh;
+    }
+    .home-photo>.img530px{
+      left:28vw;
+      }
+
+  }
+
+  @media screen and (min-width:1300px) {
+    
+      .span {
+        top: -12vh;
+        padding: 28vw;
+        left: 21vw;
+      }
+    
+  
+  }
+
+  
+
+  
+  
