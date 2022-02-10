@@ -99,6 +99,9 @@ body{
     justify-content: center;
     cursor: pointer;
     margin-right: 12px;
+
+    position: absolute;
+    left: 85vw;
   }
 
   .button-menu span{
@@ -175,7 +178,9 @@ body{
 
   .home-programmer{
     padding: 12px 0;
+    width: 250px;
   }
+
   .home-programmer>.title2{
     color: var(--white);
     font-size: 18px;
@@ -462,11 +467,7 @@ body{
       font-size: 45px; 
     }
 
-    .home-programmer>.title2{
-          font-size: 20px;
-    }
-
-    .home-experience>.title2{
+    .home-programmer>.title2, .home-experience>.title2 {
           font-size: 20px;
     }
 
@@ -500,7 +501,7 @@ body{
   }
 
   @media screen and (min-width:404px) {
-
+   
     .home-photo>.img300px{
       display:none
     }
@@ -540,10 +541,10 @@ body{
       padding: 12px 10px;
     }
 
-    .home-photo>.home-icons>div>.home-icons-hijo {
-      width: 35px;
-      padding: 10px;
-
+    
+    .home-photo > .home-icons > div > .home-icons-hijo {
+      width: 40px;
+      padding: 8px;
     }
   }
 
@@ -556,6 +557,11 @@ body{
   }
 
   @media screen and (min-width:450px) {
+
+    .button-menu{
+    position: static;
+    left: 0;
+    }
 
     .home-name{
       width: 180px;
@@ -576,10 +582,11 @@ body{
      }
 
      .home-social>div>img{
-      padding: 5px;
-      width: 25px;
+      padding: 1vw;
+      width: 4vw;
 
     }
+   
 
 
     .home-photo>.img310px{
@@ -699,6 +706,26 @@ body{
   }
 
   @media screen and (min-width:660px) {
+    .home-name {
+      width: 200px;
+    }
+  
+    .home-name>.title{
+    line-height: 6vh;
+    font-size: 5vw;
+  }
+
+  .home-name>.title >span{
+    font-size: 9vw; 
+  }
+
+
+  .home-programmer>.title2, .home-experience>.title2 {
+    font-size: 4vw;
+}
+
+    
+    
     .home-photo>.img420px{
     display: none;
     }
@@ -748,6 +775,14 @@ body{
 
   @media screen and (min-width:774px) {
 
+    .home-photo > .home-icons > div > .home-icons-hijo {
+      width: 6vw;
+      padding: 10px;
+    }
+    .home-name {
+      width: 230px;
+    }
+  
     .home-photo>.img450px{
       display: none;
       }
@@ -771,9 +806,13 @@ body{
         }
 
         .home-icons{
-          bottom: -390px;
+          bottom: -350px;
           left: 20vw;
           width: 60vw;
+        }
+
+        .aboutme {
+          margin-top: 420px;
         }
 
 
@@ -781,20 +820,88 @@ body{
 
 
   @media screen and (min-width:790px) {
-
-
       .home-photo>.img500px{
         left:17vw;
         }
-
-        /* .home-icons{
-          bottom: 00px;
-          left: 20vw;
-          width: 60vw;
-        }
-   */
   }
 
+  
+  @media screen and (min-width:850px) {
+    .home-photo>.img500px{
+      left:19vw;
+      }
+
+      .home-name>.title{
+        line-height: 8vh;}
+
+        .home-icons {
+          bottom: -320px;
+        }
+}
+
+
+@media screen and (min-width:880px) {
+ 
+  .home-icons{
+    bottom: -310px;
+    /* margin-bottom: 30px; */
+  }
+
+  
+  .aboutme {
+    margin-top: 440px;
+  }
+
+}
+
+@media screen and (min-width:900px) {
+  .home-photo>.img500px{
+    left:21vw;
+    }
+
+    .home-icons {
+      bottom: -320px;
+    }
+    .aboutme {
+      margin-top: 460px;
+    }
+}
+
+@media screen and (min-width:925px) {
+  .home-name {
+    width: 270px;
+  }
+  .span{
+    top:-1vh;
+    padding: 30vw;
+    left: 19vw;
+  }
+
+  .home-icons {
+padding: 20px 0;  }
+
+}
+
+@media screen and (min-width:990px) {
+  .home-photo>.img500px{
+    left:22vw;
+    }
+
+
+}
+
+@media screen and (min-width:1010px) {
+  .home-photo>.img500px{
+    left:23vw;
+    }
+
+
+}
+
+
+
+
+  /*todo PARA DESkTOP*/
   @media screen and (min-width:1123px) {
     .button-menu{
       display: none;
