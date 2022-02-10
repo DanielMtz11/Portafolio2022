@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
 
 :root{
-    --backgroundColor : #0a0c18;
+    --backgroundColor : #0d0e1d;
     --grayColor: #D1CECA;
     --white: #ffffff;
     --bluelight:#32b0be;
@@ -215,7 +215,7 @@ body{
 
    .home-social>div{
      display: flex;
-     justify-content: space-around;
+     justify-content: space-evenly;
       /* flex-direction: column; */
     }
 
@@ -868,6 +868,10 @@ body{
 }
 
 @media screen and (min-width:925px) {
+  .main {
+    margin-top: 90px;
+    /* padding: 0 15px; */
+  }
   .home-name {
     width: 270px;
   }
@@ -902,41 +906,52 @@ padding: 20px 0;  }
 
 
   /*todo PARA DESkTOP*/
-  @media screen and (min-width:1123px) {
-    .button-menu{
-      display: none;
-    }
-
-
-
-    .main-nav{
-      position: static;
-      height: 100%;
-      width: 70%;
-    }
-
-    .nav-links{
-        justify-content: space-around;
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        background-color: var(--backgroundColor);
-    }
-
-    .link-item:hover{
-        color: var(--bluelight);
-    }
-
-
-    .link-item{
-
-        color: var(--white);
-        display: inline-block;
-        margin-top: 0;
-        margin-right: 2rem;
-    }
-
-
-
+  @media screen and (min-width:1024px) {
+    
+    
+        .main-nav{
+          position: static;
+          height: 100%;
+          width: 70%;
+        }
+        
+        .button-menu{
+          display: none;
+        }  
+        
+            .nav-links{
+                justify-content: space-around;
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                background-color: var(--backgroundColor);
+            }
+        
+            .link-item:hover{
+                color: var(--bluelight);
+            }
+        
+        
+            .link-item{
+        
+                color: var(--white);
+                display: inline-block;
+                margin-top: 0;
+                margin-right: 2rem;
+            }
+        
+    .home-icons {  
+      bottom: -350px;
+      border-radius: 7px;
+      width: 85vw;
+      left: 65px;
+      padding: 36px 0;
+    }  
+    .home-photo > .home-icons > div > .home-icons-hijo {
+      width: 7vw;
+      padding: 10px 30px;
+      border-radius: 10px;
+    }  
+ 
   }
