@@ -236,7 +236,7 @@ body{
     left: 4vw;
     z-index: 2;
 }
-  .home-photo> .img300px, .img310px, .img320px, .img400px, .img420px , .img450px, .img500px, .img530px, .img600px{
+  .home-photo> .img300px, .img310px, .img320px, .img400px, .img420px , .img450px, .img500px, .img530px, .img600px, .img650px{
     display: none;
   }
 
@@ -943,12 +943,16 @@ padding: 20px 0;  }
             }
         
     .home-icons {  
-      bottom: -350px;
+      bottom: -420px;
       border-radius: 7px;
       width: 85vw;
       left: 65px;
       padding: 36px 0;
     }  
+
+    .home-photo > .img500px {
+      top: 100px;
+    }
     .home-photo > .home-icons > div > .home-icons-hijo {
       width: 7vw;
       padding: 8px 30px;
@@ -974,7 +978,7 @@ padding: 20px 0;  }
         .home-photo>.img530px{
           position: absolute;
           display: block;
-          top:20px;
+          top: 100px;
           left:23vw;
           z-index: 7;
           }
@@ -1015,21 +1019,32 @@ padding: 20px 0;  }
     }
 
     .home-photo>.img530px{
-      left:26vw;
+      display: none;
       }
 
+      .home-photo>.img600px{
+        position: absolute;
+        z-index: 7;
+        top: -14px;
+        display: block ;
+        left:24vw;
+        }
   }
 
   @media screen and (min-width:1266px) {
 
+    .home-icons {
+  
+      left: 75px;
+    }
     .main {
       margin-top: 145px;
     }
     .span {
       top: -10vh;
     }
-    .home-photo>.img530px{
-      left:27vw;
+    .home-photo>.img600px{
+      left:25vw;
       }
   }
 
@@ -1049,16 +1064,6 @@ padding: 20px 0;  }
   @media screen and (min-width:1300px) {
     
    
-      .home-photo>.img530px{
-        display: none;
-        }
-      .home-photo>.img600px{
-        position: absolute;
-        z-index: 7;
-        top:-60px;
-        display: block ;
-        left:25vw;
-        }
 
         .span {
           top: -12vh;
@@ -1070,6 +1075,12 @@ padding: 20px 0;  }
   
   }
   @media screen and (min-width:1373px) {
+
+    .home-icons {
+      left: 87px;
+    }
+
+
     .home-photo>.img600px{
       left:26vw;
 
@@ -1078,25 +1089,39 @@ padding: 20px 0;  }
   }
 
   @media screen and (min-width:1414px) {
-    .home-photo>.img600px{
+    /* .home-photo>.img600px{
       left:27vw;
       top:-66px;
 
 
-    }
+    } */
 
   }
 
 
   @media screen and (min-width:1463px) {
-    /* .home-photo>.img600px{
-      left:27vw;
-      top:-66px;
-    } */
+
+    .home-photo>.img600px{
+      display: none;
+     }
+    .home-photo>.img650px{
+      position: absolute;
+      z-index: 7;
+      top:-60px;
+      display: block ;
+      left:25vw;
+      }
+
+      .home-icons {
+        bottom: -412px;
+    
+      }
+  
 
 
 
   }
+
 
   
 
