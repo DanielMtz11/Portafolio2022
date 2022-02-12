@@ -908,8 +908,17 @@ padding: 20px 0;  }
 
   /*todo PARA DESkTOP*/
   @media screen and (min-width:1024px) {
+
+    .home-content{
+      padding-left: 50px;
+    }
+    .home-content-experience{
+      padding-right: 100px;
+    }
     
-    
+    .home-name > .title {
+      line-height: 11vh;
+    }
         .main-nav{
           position: static;
           height: 100%;
@@ -951,7 +960,7 @@ padding: 20px 0;  }
     }  
 
     .home-photo > .img500px {
-      top: 100px;
+      top: 130px;
     }
     .home-photo > .home-icons > div > .home-icons-hijo {
       width: 7vw;
@@ -978,20 +987,23 @@ padding: 20px 0;  }
         .home-photo>.img530px{
           position: absolute;
           display: block;
-          top: 100px;
-          left:23vw;
+          top: 110px;
+          left:24vw;
           z-index: 7;
           }
     
   }
 
-  @media screen and (min-width:1080px) {
+  /* @media screen and (min-width:1080px) {
   
-    .home-photo>.img530px{
-      left:24vw;
-      }
-  }
+    .home-photo > .img530px {
+      left: 24vw;
+      top: 110px;
+    }
+  } */
   @media screen and (min-width:1164px) {
+
+    
     .home-photo>.img530px{
       left:25vw;
       }
@@ -1011,6 +1023,10 @@ padding: 20px 0;  }
   }
 
   @media screen and (min-width:1222px) {
+
+    .home-name > .title {
+      line-height: 13vh;
+    }
     .main {
       margin-top: 130px;
     }
@@ -1021,13 +1037,21 @@ padding: 20px 0;  }
     .home-photo>.img530px{
       display: none;
       }
-
+/* 
       .home-photo>.img600px{
         position: absolute;
         z-index: 7;
-        top: -14px;
+        top: 20px;
         display: block ;
         left:24vw;
+        } */
+
+        .home-photo > .img600px {
+          position: absolute;
+          z-index: 7;
+          top: 69px;
+          display: block;
+          left: 24vw;
         }
   }
 
@@ -1045,6 +1069,8 @@ padding: 20px 0;  }
     }
     .home-photo>.img600px{
       left:25vw;
+      top: 72px;
+
       }
   }
 
@@ -1055,23 +1081,17 @@ padding: 20px 0;  }
     .span {
       top: -12vh;
     }
-    .home-photo>.img530px{
-      left:28vw;
-      }
+  
 
   }
 
   @media screen and (min-width:1300px) {
     
-   
-
         .span {
           top: -12vh;
           padding: 28vw;
           left: 21vw;
         }
-  
-    
   
   }
   @media screen and (min-width:1373px) {
@@ -1107,7 +1127,7 @@ padding: 20px 0;  }
     .home-photo>.img650px{
       position: absolute;
       z-index: 7;
-      top:-60px;
+      top:60px;
       display: block ;
       left:25vw;
       }
