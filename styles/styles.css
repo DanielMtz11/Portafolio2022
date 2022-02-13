@@ -311,7 +311,7 @@ body{
       }
 
 
-      .servicios>h3{
+      .servicios>h3, .skills>h3{
         text-transform: capitalize;
         color: var(--bluelight);
         font-weight: 700;
@@ -444,6 +444,75 @@ body{
           margin-left: 20px;
         }
   
+        .skils-container {
+          width: 95vw;
+          height: 150px;
+          position: relative;
+          /* background-color: var(--bluelight); */
+      }
+
+      .skills>div>p{
+        color: var(--white);
+        
+      }
+
+      
+      .skills>div>.js{
+        position: absolute;
+        right: 0;
+        text-align: center;
+        padding:  10px;
+        background-color: var(--bluelight);
+      
+      }
+
+      
+      .skills>div>.html{
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        padding:  10px;
+        background-color: var(--bluelight);
+      
+      }
+
+      .skills>div>.css{
+        position: absolute;
+        left: 0;
+        text-align: center;
+        padding:  10px;
+        background-color: var(--bluelight);
+      }
+
+      
+      .skills>div>.c{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        padding:  10px;
+        background-color: var(--bluelight);
+      }
+
+      .skills>div>.sql{
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        text-align: center;
+        padding:  10px;
+        background-color: var(--bluelight);
+      }
+
+      .skills>div>.arduino{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        padding:  10px;
+        background-color: var(--bluelight);
+      }
+
+
   
   
   @media screen and (min-width:340px) {
@@ -807,22 +876,6 @@ body{
       display: none;
       }
 
-      /* .home-photo>.img500px{
-        display: block;
-        left:15vw;
-        position: absolute;
-        z-index: 5;
-        top:45px;
-
-        } */
-
-        /* .home-photo>.img500px {
-          display: block;
-          left: 15vw;
-          position: absolute;
-          z-index: 5;
-          top: -3px;
-      } */
 
       .home-photo>.img500px {
         display: block;
@@ -839,17 +892,11 @@ body{
           padding: 33vw;
           left: 17vw;
         }
-/* 
-        .home-icons{
-          bottom: -350px;
-          left: 20vw;
-          width: 60vw;
-        } */
-        /* .home-icons {
-          bottom: -317px;
-          left: 20vw;
-          width: 60vw;
-      } */
+
+
+      .aboutme > h3,  .servicios > h3 , .skills> h3 {
+        font-size: 4vw;
+      }
 
 
       .home-icons {
@@ -861,9 +908,14 @@ body{
 
     
 
-        .aboutme {
+        .aboutme{
           margin-top: 420px;
         }
+
+        .skills{
+          margin-top: 220px;
+        }
+
 
         
 
@@ -1018,7 +1070,7 @@ padding: 20px 0;  }
             }
         
 
-       
+
             .home-icons {
               bottom: -350px;
               border-radius: 7px;
@@ -1047,9 +1099,7 @@ padding: 20px 0;  }
       margin-top: 160px;
   }
 
-    .aboutme > h3,  .servicios > h3  {
-      font-size: 4vw;
-    }
+    
     .servicios > h3{
       padding-bottom: 30px;
     }
@@ -1059,8 +1109,9 @@ padding: 20px 0;  }
       padding: 10px 220px;
     }
 
- 
-  }
+    .skills {
+      margin-top: 150px;
+  }}
 
   @media screen and (min-width:1080px) {
     
