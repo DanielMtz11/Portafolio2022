@@ -336,12 +336,16 @@ body{
         margin-bottom: 20px;
         z-index: 2;
         position: relative;
+
       }
 
       .row.scrolled:after{
         opacity: 0;
+
       }
       .row:after{
+        visibility: hidden;
+
         transition: opacity 1s;
         opacity: 0.85;
         content: ">";
@@ -396,7 +400,7 @@ body{
       }
 
       .flx-50{
-        width:240px;
+        width:250px;
       }
 
 
@@ -407,6 +411,7 @@ body{
 
       .os-scrollbar-handle{
         background: #2667f2 !important;
+
       }
 
       .deviant-scrollbars > .os-scrollbar-horizontal {
@@ -419,6 +424,7 @@ body{
         right: auto;
         top: 10px;
         height: 20%;
+
       }
       .deviant-scrollbars.os-host-scrollbar-horizontal-hidden > .os-scrollbar-vertical {
         top: 0;
@@ -431,6 +437,7 @@ body{
           .deviant-scrollbars> .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle {
         max-width: 1000px;
         min-width: 30px;
+
       }
 
       div.col:nth-of-type(1){
@@ -719,7 +726,7 @@ body{
     }
   
     .home-name>.title{
-    line-height: 6vh;
+    /* line-height: 6vh; */
     font-size: 5vw;
   }
 
@@ -876,9 +883,9 @@ body{
       left:19vw;
       }
 
-      .home-name>.title{
-        line-height: 8vh;}
-
+      .home-name>.title {
+        line-height: 60px;
+    }
         /* .home-icons {
           bottom: -320px;
         } */
@@ -887,10 +894,7 @@ body{
 
 @media screen and (min-width:880px) {
  
-  .home-icons{
-    /* bottom: -310px; */
-    /* margin-bottom: 30px; */
-  }
+ 
 
   
   .aboutme {
@@ -935,6 +939,17 @@ padding: 20px 0;  }
     left:22vw;
     }
 
+    .row:after {
+    visibility: hidden;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
 
 }
 
@@ -951,6 +966,15 @@ padding: 20px 0;  }
 
   /*todo PARA DESkTOP*/
   @media screen and (min-width:1024px) {
+
+    
+    .flx-50{
+      width:300px;
+    }
+
+    .row{
+      
+      overflow-x: hidden;}
     .home-content{
       padding-left: 50px;
     }
@@ -959,8 +983,8 @@ padding: 20px 0;  }
     }
     
     .home-name > .title {
-      line-height: 11vh;
-    }
+      line-height: 75px;
+  }
         .main-nav{
           position: static;
           height: 100%;
@@ -993,23 +1017,6 @@ padding: 20px 0;  }
                 margin-right: 2rem;
             }
         
-            /* .home-icons {
-              bottom: -276px;
-              border-radius: 7px;
-              width: 85vw;
-              left: 65px;
-              padding: 36px 0;
-            }  */
-
-/* 
-            .home-icons {
-              bottom: -294px;
-              border-radius: 7px;
-              width: 85vw;
-              left: 65px;
-              padding: 40px 0;
-              //padding: 36px 0; 
-            } */
 
        
             .home-icons {
@@ -1031,14 +1038,21 @@ padding: 20px 0;  }
 
     .span {top: -4vh;}
 
-    .aboutme {
+    .aboutme  {
       margin-top: 400px;
     }
+    
+
+    .servicios {
+      margin-top: 160px;
+  }
 
     .aboutme > h3,  .servicios > h3  {
       font-size: 4vw;
     }
-
+    .servicios > h3{
+      padding-bottom: 30px;
+    }
     .aboutme > p {
       text-align: center;
       font-size: 19px;
@@ -1098,9 +1112,9 @@ padding: 20px 0;  }
 
   @media screen and (min-width:1222px) {
 
-    .home-name > .title {
+    /* .home-name > .title {
       line-height: 13vh;
-    }
+    } */
     .main {
       margin-top: 130px;
     }
@@ -1152,8 +1166,11 @@ padding: 20px 0;  }
     }
     .home-photo>.img600px{
       left:25vw;
-
       }
+
+      .home-name > .title {
+        line-height: 110px;
+    }
   }
 
   @media screen and (min-width:1300px) {
@@ -1183,12 +1200,14 @@ padding: 20px 0;  }
           padding: 28vw;
           left: 21vw;
         }
+                  
+ .home-icons {
+        bottom: -300px;
+    
+      }
   
   }
   @media screen and (min-width:1373px) {
-
-  
-
 
     .home-photo>.img600px{
       left:26vw;
@@ -1199,17 +1218,11 @@ padding: 20px 0;  }
       left: 87px;
       /* bottom: -264px; */
     }
+    /* .home-name > .title {
+            line-height: 5px;
+          } */
 
-  }
-
-  @media screen and (min-width:1414px) {
-    /* .home-photo>.img600px{
-      left:27vw;
-      top:-66px;
-
-
-    } */
-
+  
   }
 
 
@@ -1226,10 +1239,10 @@ padding: 20px 0;  }
       left:25vw;
       }
 
-      .home-icons {
+      /* .home-icons {
         bottom: -412px;
     
-      }
+      } */
   
 
 
