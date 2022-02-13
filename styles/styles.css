@@ -692,6 +692,14 @@ body{
     {
       margin-top: 370px;
     }
+
+    .aboutme > p {
+      color: var(--white);
+      font-weight: 400;
+      text-align: justify;
+      font-size: 15px;
+      padding: 10px 25px;
+    }
   }
 
   @media screen and (min-width:600px) {
@@ -765,9 +773,14 @@ body{
   }
 
   @media screen and (min-width:755px) {
-    .home-photo>.img450px{
+    /* .home-photo>.img450px{
       left:19vw;
-      }
+      } */
+
+      .home-photo>.img450px {
+        left: 19vw;
+        top: 8vh;
+    }
 
 
   }
@@ -787,15 +800,30 @@ body{
       display: none;
       }
 
-      .home-photo>.img500px{
+      /* .home-photo>.img500px{
         display: block;
         left:15vw;
         position: absolute;
         z-index: 5;
         top:45px;
 
-        }
+        } */
 
+        /* .home-photo>.img500px {
+          display: block;
+          left: 15vw;
+          position: absolute;
+          z-index: 5;
+          top: -3px;
+      } */
+
+      .home-photo>.img500px {
+        display: block;
+        left: 15vw;
+        position: absolute;
+        z-index: 5;
+        top: 69px;
+    }
 
 
 
@@ -804,16 +832,33 @@ body{
           padding: 33vw;
           left: 17vw;
         }
-
+/* 
         .home-icons{
           bottom: -350px;
           left: 20vw;
           width: 60vw;
-        }
+        } */
+        /* .home-icons {
+          bottom: -317px;
+          left: 20vw;
+          width: 60vw;
+      } */
+
+
+      .home-icons {
+        bottom: -371px;
+        left: 20vw;
+        width: 60vw;
+    }
+
+
+    
 
         .aboutme {
           margin-top: 420px;
         }
+
+        
 
 
   }
@@ -834,22 +879,22 @@ body{
       .home-name>.title{
         line-height: 8vh;}
 
-        .home-icons {
+        /* .home-icons {
           bottom: -320px;
-        }
+        } */
 }
 
 
 @media screen and (min-width:880px) {
  
   .home-icons{
-    bottom: -310px;
+    /* bottom: -310px; */
     /* margin-bottom: 30px; */
   }
 
   
   .aboutme {
-    margin-top: 440px;
+    margin-top: 420px;
   }
 
 }
@@ -859,12 +904,10 @@ body{
     left:21vw;
     }
 
-    .home-icons {
+    /* .home-icons {
       bottom: -320px;
-    }
-    .aboutme {
-      margin-top: 460px;
-    }
+    } */
+  
 }
 
 @media screen and (min-width:925px) {
@@ -908,7 +951,6 @@ padding: 20px 0;  }
 
   /*todo PARA DESkTOP*/
   @media screen and (min-width:1024px) {
-
     .home-content{
       padding-left: 50px;
     }
@@ -951,27 +993,58 @@ padding: 20px 0;  }
                 margin-right: 2rem;
             }
         
-    .home-icons {  
-      bottom: -420px;
-      border-radius: 7px;
-      width: 85vw;
-      left: 65px;
-      padding: 36px 0;
-    }  
+            /* .home-icons {
+              bottom: -276px;
+              border-radius: 7px;
+              width: 85vw;
+              left: 65px;
+              padding: 36px 0;
+            }  */
 
-    .home-photo > .img500px {
-      top: 130px;
-    }
+/* 
+            .home-icons {
+              bottom: -294px;
+              border-radius: 7px;
+              width: 85vw;
+              left: 65px;
+              padding: 40px 0;
+              //padding: 36px 0; 
+            } */
+
+       
+            .home-icons {
+              bottom: -350px;
+              border-radius: 7px;
+              width: 85vw;
+              left: 65px;
+              padding: 40px 0;
+              /* padding: 36px 0; */
+          }
+            .home-photo > .img500px {
+              top: 5px;
+            }
     .home-photo > .home-icons > div > .home-icons-hijo {
       width: 7vw;
       padding: 8px 30px;
       border-radius: 10px;
     }  
 
-    .span {
-      top: -4vh;
-  
+    .span {top: -4vh;}
+
+    .aboutme {
+      margin-top: 400px;
     }
+
+    .aboutme > h3,  .servicios > h3  {
+      font-size: 4vw;
+    }
+
+    .aboutme > p {
+      text-align: center;
+      font-size: 19px;
+      padding: 10px 220px;
+    }
+
  
   }
 
@@ -984,23 +1057,24 @@ padding: 20px 0;  }
           display: none;
           }
 
-        .home-photo>.img530px{
+        /* .home-photo>.img530px{
           position: absolute;
           display: block;
-          top: 110px;
+          top: 42px;
           left:24vw;
           z-index: 7;
-          }
+          } */
+
+          .home-photo>.img530px {
+            position: absolute;
+            display: block;
+            top: 5px;
+            left: 24vw;
+            z-index: 7;
+        }
     
   }
 
-  /* @media screen and (min-width:1080px) {
-  
-    .home-photo > .img530px {
-      left: 24vw;
-      top: 110px;
-    }
-  } */
   @media screen and (min-width:1164px) {
 
     
@@ -1037,22 +1111,31 @@ padding: 20px 0;  }
     .home-photo>.img530px{
       display: none;
       }
-/* 
-      .home-photo>.img600px{
-        position: absolute;
-        z-index: 7;
-        top: 20px;
-        display: block ;
-        left:24vw;
+
+
+        /* .home-photo > .img600px {
+          position: absolute;
+          z-index: 7;
+          top: -69px;
+          display: block;
+          left: 24vw;
         } */
+
+
+        .home-icons {
+          bottom: -274px;
+        
+        }
 
         .home-photo > .img600px {
           position: absolute;
           z-index: 7;
-          top: 69px;
+          top: -47px;
           display: block;
           left: 24vw;
-        }
+      }
+
+        
   }
 
   @media screen and (min-width:1266px) {
@@ -1069,7 +1152,6 @@ padding: 20px 0;  }
     }
     .home-photo>.img600px{
       left:25vw;
-      top: 72px;
 
       }
   }
@@ -1080,6 +1162,15 @@ padding: 20px 0;  }
     }
     .span {
       top: -12vh;
+    }
+
+    
+    .home-icons {
+      bottom: -350px;}
+
+      
+    .aboutme {
+      margin-top: 450px;
     }
   
 
@@ -1096,14 +1187,17 @@ padding: 20px 0;  }
   }
   @media screen and (min-width:1373px) {
 
-    .home-icons {
-      left: 87px;
-    }
+  
 
 
     .home-photo>.img600px{
       left:26vw;
 
+    }
+
+    .home-icons {
+      left: 87px;
+      /* bottom: -264px; */
     }
 
   }
@@ -1127,7 +1221,7 @@ padding: 20px 0;  }
     .home-photo>.img650px{
       position: absolute;
       z-index: 7;
-      top:60px;
+      top: 50px;
       display: block ;
       left:25vw;
       }
