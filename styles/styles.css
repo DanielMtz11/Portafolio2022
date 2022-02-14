@@ -18,8 +18,6 @@
 body{
     background-color: var(--backgroundColor);
     font-family: var(--fuente);
-
-
     }
 
   .main-header{
@@ -311,7 +309,7 @@ body{
       }
 
 
-      .servicios>h3, .skills>h3{
+      .servicios>h3, .skills>h3, .portafolio>h3 {
         text-transform: capitalize;
         color: var(--bluelight);
         font-weight: 700;
@@ -444,11 +442,14 @@ body{
           margin-left: 20px;
         }
   
-        .skils-container {
-          width: 95vw;
-          height: 150px;
+
+
+        .skills {
           position: relative;
-          /* background-color: var(--bluelight); */
+          width: 95vw;
+          height: 250px;
+          /* background-color: #444444; */
+          margin-bottom: 250px;
       }
 
       .skills>div>p{
@@ -456,61 +457,142 @@ body{
         
       }
 
-      
-      .skills>div>.js{
-        position: absolute;
-        right: 0;
-        text-align: center;
-        padding:  10px;
-        background-color: var(--bluelight);
-      
-      }
 
       
-      .skills>div>.html{
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        padding:  10px;
-        background-color: var(--bluelight);
-      
-      }
+    /* .bubble-1 {
+      left: 300px;
+      animation-delay: 1.3s;
+    } */
 
-      .skills>div>.css{
-        position: absolute;
-        left: 0;
-        text-align: center;
-        padding:  10px;
-        background-color: var(--bluelight);
-      }
+    .bubble-1 {
+      left: 160px;
+      animation-delay: 1.3s;
+    }
+    .bubble-1 .bubble-animation-y{
+      animation-delay: 0.7s;
+    }
 
-      
-      .skills>div>.c{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        text-align: center;
-        padding:  10px;
-        background-color: var(--bluelight);
-      }
+    /* .bubble>p{
+     color: var(--white);
+     padding-top: 40px;
+     text-align: center;
+    } */
 
-      .skills>div>.sql{
-        position: absolute;
-        right: 50%;
-        bottom: 50%;
-        text-align: center;
-        padding:  10px;
-        background-color: var(--bluelight);
-      }
+    .bubble>p {
+      color: var(--white);
+      padding-top: 40px;
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 700;
+  }
 
-      .skills>div>.arduino{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        text-align: center;
-        padding:  10px;
-        background-color: var(--bluelight);
-      }
+    
+.bubble-2 {
+  /* left: 133px;
+  animation-delay: 2s; */
+   left: -25px;
+  animation-delay: 4.7s;
+}
+.bubble-2 .bubble-animation-y{
+  animation-delay: 2.1s;
+
+  /* animation-delay: 3.8s; */
+
+}
+
+.bubble-3 {
+  /* left: -25px;
+  animation-delay: 4.7s; */
+  left: 133px;
+  animation-delay: 2s;
+}
+.bubble-3 .bubble-animation-y{
+  animation-delay: 3.8s;
+
+  /* animation-delay: 2.1s; */
+
+}
+
+.bubble-4 {
+  left: 0;
+  animation-delay: 0s;
+}
+.bubble-4 .bubble-animation-y{
+  animation-delay: 6s;
+}
+
+.bubble-5 {
+  left: 115px;
+  animation-delay: 1.5s;
+}
+.bubble-5 .bubble-animation-y{
+  animation-delay: 7s;
+}
+
+
+.bubble-container {
+  position: absolute;
+  width: 25px;
+  height: 0px;
+  bottom: -100px;
+  /* left: 100px; */
+}
+
+
+
+.bubble {
+    background-color: #049cff1a;
+    opacity: 0;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 20px 30px rgb(50 176 190), inset 0px 10px 30px 5px rgb(21 140 190);
+}
+.bubble-animation-x {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: bubbleXAnimFrames;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+.bubble-animation-y {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: bubbleYAnimFrames;
+  animation-timing-function: linear;
+}
+
+@keyframes bubbleXAnimFrames {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes bubbleYAnimFrames {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  95% {
+    transform: translateY(-280px);
+    opacity: 0.8;
+}
+  100% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+}
+
+
 
 
   
@@ -565,6 +647,12 @@ body{
   top:35px;
   left: 12vw;
   padding: 140px;
+}
+
+
+.bubble-1 {
+  left: 200px;
+  animation-delay: 1.3s;
 }
   }
 
@@ -622,6 +710,12 @@ body{
       width: 40px;
       padding: 8px;
     }
+
+    
+.bubble-1 {
+  left: 250px;
+  animation-delay: 1.3s;
+}
   }
 
 
@@ -691,6 +785,20 @@ body{
         width: 65vw;
       }
 
+      .bubble-1 {
+        left: 280px;
+        animation-delay: 1.3s;
+      }
+      .bubble-4 {
+        left: 50px;
+        animation-delay: 0s;
+      }
+      
+      .bubble-5 {
+        left: 200px;
+        animation-delay: 1.5s;
+      }
+
   }
 
   @media screen and (min-width:460px){
@@ -704,6 +812,9 @@ body{
       left: 15vw;
       padding: 170px;
     }
+
+    
+
   }
 
   @media screen and (min-width:485px){
@@ -721,6 +832,21 @@ body{
       left: 20vw;
       width: 65vw;
     }
+
+
+    .bubble-1 {
+      left: 320px;
+      animation-delay: 1.3s;
+    }
+    .bubble-4 {
+      left: 150px;
+      animation-delay: 0s;
+    }
+    
+    .bubble-5 {
+      left: 300px;
+      animation-delay: 1.5s;
+    }
   }
 
   @media screen and (min-width:500px) {
@@ -729,12 +855,40 @@ body{
       left: 20vw;
       width: 60vw;
     }
+
+    .bubble-1 {
+      left: 330px;
+      animation-delay: 1.3s;
+    }
+    .bubble-4 {
+      left: 160px;
+      animation-delay: 0s;
+    }
+    
+    .bubble-5 {
+      left: 310px;
+      animation-delay: 1.5s;
+    }
   }
 
   @media screen and (min-width:540px) {
     .home-icons{
 
       width: 57vw;
+    }
+
+    .bubble-1 {
+      left: 370px;
+      animation-delay: 1.3s;
+    }
+    /* .bubble-4 {
+      left: 160px;
+      animation-delay: 0s;
+    } */
+    
+    .bubble-5 {
+      left: 340px;
+      animation-delay: 1.5s;
     }
 
   }
@@ -776,6 +930,25 @@ body{
       font-size: 15px;
       padding: 10px 25px;
     }
+
+/* 
+    .bubble-container {
+      left: 10px;
+    } */
+    
+    .bubble-1 {
+      left: 390px;
+      animation-delay: 1.3s;
+    }
+    .bubble-4 {
+      left: 170px;
+      animation-delay: 0s;
+    }
+    
+    .bubble-5 {
+      left: 360px;
+      animation-delay: 1.5s;
+    }
   }
 
   @media screen and (min-width:600px) {
@@ -786,6 +959,12 @@ body{
       left:16vw;
       z-index: 5;
     }
+
+    .bubble-container {
+      /* left: 0; */
+      padding-left: 30px;
+  }
+    
 
   }
 
@@ -822,6 +1001,13 @@ body{
       left:15vw;
       z-index: 5;
       }
+
+      .bubble-container {
+        padding-left: 60px;
+    }
+
+
+    
   }
 
   @media screen and (min-width:680px) {
@@ -841,6 +1027,10 @@ body{
         /* padding: 200px; */
         left: 16vw;
       }
+
+      .bubble-container {
+        padding-left: 80px;
+    }
   }
   @media screen and (min-width:735px) {
     .home-photo>.img450px{
@@ -858,6 +1048,21 @@ body{
         top: 8vh;
     }
 
+
+  .bubble>p {
+    padding-top: 54px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+  .bubble {
+    background-color: #049cff1a;
+    opacity: 0;
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    box-shadow: 0 20px 30px rgb(50 176 190), inset 0px 10px 30px 5px rgb(21 140 190);
+}
 
   }
 
@@ -894,7 +1099,7 @@ body{
         }
 
 
-      .aboutme > h3,  .servicios > h3 , .skills> h3 {
+      .aboutme > h3,  .servicios > h3 , .skills> h3, .portafolio>h3 {
         font-size: 4vw;
       }
 
@@ -912,11 +1117,19 @@ body{
           margin-top: 420px;
         }
 
-        .skills{
+        /* .skills{
           margin-top: 220px;
-        }
+        } */
 
+        .skills {
+          margin-top: 142px;
+      }
 
+        .bubble-container {
+          padding-left: 108px;
+      }
+
+      
         
 
 
@@ -927,6 +1140,14 @@ body{
       .home-photo>.img500px{
         left:17vw;
         }
+
+        /* .bubble-container {
+          padding-left: 120px;
+      } */
+
+      .bubble-container {
+        padding-left: 122px;
+    }
   }
 
   
@@ -938,9 +1159,11 @@ body{
       .home-name>.title {
         line-height: 60px;
     }
-        /* .home-icons {
-          bottom: -320px;
-        } */
+        
+        .bubble-container {
+          padding-left: 146px;
+      }
+     
 }
 
 
@@ -960,9 +1183,9 @@ body{
     left:21vw;
     }
 
-    /* .home-icons {
-      bottom: -320px;
-    } */
+    .bubble-container {
+      padding-left: 160px;
+  }
   
 }
 
@@ -984,6 +1207,10 @@ body{
   .home-icons {
 padding: 20px 0;  }
 
+.bubble-container {
+  padding-left: 170px;
+}
+
 }
 
 @media screen and (min-width:990px) {
@@ -999,7 +1226,9 @@ padding: 20px 0;  }
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
+}
+.bubble-container {
+  padding-left: 200px;
 }
 
 
@@ -1010,6 +1239,9 @@ padding: 20px 0;  }
     left:23vw;
     }
 
+    .bubble-container {
+      padding-left: 220px;
+  }
 
 }
 
@@ -1111,7 +1343,12 @@ padding: 20px 0;  }
 
     .skills {
       margin-top: 150px;
-  }}
+  }
+
+  .bubble-container {
+    padding-left: 250px;
+}
+}
 
   @media screen and (min-width:1080px) {
     
@@ -1146,6 +1383,10 @@ padding: 20px 0;  }
     .home-photo>.img530px{
       left:25vw;
       }
+      .bubble-container {
+        padding-left: 295px;
+    }
+
   }
 
   
@@ -1200,7 +1441,9 @@ padding: 20px 0;  }
           left: 24vw;
       }
 
-        
+      .bubble-container {
+        padding-left: 322px;
+    }
   }
 
   @media screen and (min-width:1266px) {
@@ -1241,6 +1484,9 @@ padding: 20px 0;  }
       margin-top: 450px;
     }
   
+    .bubble-container {
+      padding-left: 342px;
+  }
 
   }
 
@@ -1273,7 +1519,9 @@ padding: 20px 0;  }
             line-height: 5px;
           } */
 
-  
+          .bubble-container {
+            padding-left: 375px;
+        }
   }
 
 
@@ -1289,12 +1537,11 @@ padding: 20px 0;  }
       display: block ;
       left:25vw;
       }
-
-      /* .home-icons {
-        bottom: -412px;
+      .bubble-container {
+        padding-left: 413px;
+    }
     
-      } */
-  
+    
 
 
 
