@@ -466,10 +466,10 @@ body{
 
     .bubble-1 {
       left: 160px;
-      animation-delay: 1.3s;
+      animation-delay: 0.3s;
     }
     .bubble-1 .bubble-animation-y{
-      animation-delay: 0.7s;
+      animation-delay: 1.7s;
     }
 
     /* .bubble>p{
@@ -508,7 +508,7 @@ body{
   animation-delay: 2s;
 }
 .bubble-3 .bubble-animation-y{
-  animation-delay: 3.8s;
+  animation-delay: .8s;
 
   /* animation-delay: 2.1s; */
 
