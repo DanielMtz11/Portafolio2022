@@ -1065,6 +1065,10 @@ body{
     box-shadow: 0 20px 30px rgb(50 176 190), inset 0px 10px 30px 5px rgb(21 140 190);
 }
 
+.bubble-1 .bubble-animation-y {
+  animation-delay: 1.7s;
+}
+
   }
 
 
