@@ -468,9 +468,10 @@ body{
       left: 160px;
       animation-delay: 0.3s;
     }
-    .bubble-1 .bubble-animation-y{
-      animation-delay: 1.7s;
-    }
+ 
+    .bubble-1 .bubble-animation-y {
+      animation-delay: 3.7s;
+  }
 
     /* .bubble>p{
      color: var(--white);
