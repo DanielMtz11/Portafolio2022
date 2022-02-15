@@ -57,7 +57,7 @@ body{
     height: 100%;
     align-items: center;
     justify-content: flex-start;
-    font-size: 13px;
+    font-size: 14px;
     font-weight:400;
   }
 
@@ -298,14 +298,13 @@ body{
     padding-bottom: 15px;
     }
 
-    .aboutme>p{
-
-      color: var(--white);
-      font-weight: 400;
-      text-align:justify;
-      font-size: 15px;
-      /* padding: 10px 15px; */
-
+   
+      .aboutme > p {
+        color: var(--white);
+        font-weight: 400;
+        text-align: center;
+        font-size: 15px;
+        /* padding: 5px 15px; */
       }
 
       .servicios{
@@ -317,12 +316,12 @@ body{
       }
 
 
-      .servicios>h3, .skills>h3, .portafolio>h3, .contact>h3 {
+      .aboutme > h3,.servicios>h3, .skills>h3, .portafolio>h3, .contact>h3 {
         text-transform: capitalize;
         color: var(--bluelight);
         font-weight: 700;
         text-align: center;
-        font-size: 22px;
+        font-size: 28px;
         padding-bottom: 15px;
         }
 
@@ -636,30 +635,29 @@ body{
 }
 
 .contact{
-  /* width: auto; */
   height: 280px;
-  /* margin: 0 20px; */
-  /* background-color: #2667f2; */
-
 }
 
-.container-imgs{
-  width: 90vw;
-  height: 150px;
 
-  /* padding: 0 200px; */
-  /* height: 100%; */
-  /* background-color: #2667f2; */
-  position: relative;
+
+.container-imgs {
+	height: 150px;
+	position: relative;
+	max-width: 500px;
+	margin: 0 auto;
 }
-.container-imgs>div.phone, div.mail{
-  width: 50%;
-  height: 100%;
-  background-color: var(--white);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center; 
+
+
+.container-imgs > div.phone, div.mail {
+	width: 143px;
+	height: 143px;
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
 .container-imgs>div.mail{
@@ -667,14 +665,18 @@ body{
   right: 0;
   
 }
-.container-imgs>div>p{
+
+.container-imgs > div > h3 {
   font-size: 12px;
-  padding: 0 auto;
-  
+}
+.container-imgs > div > p {
+  font-weight: 600;
+	font-size: 10px;
+	padding: 0 auto;
 }
 
 .container-imgs>div>img{
-  width: 35%;
+  width: 45%;
   }
 
 
@@ -738,6 +740,11 @@ body{
   left: 200px;
   animation-delay: 1.3s;
 }
+
+
+.container-imgs > div.phone, div.mail {
+	width: 150px;
+	height: 150px;
   }
 
   @media screen and (min-width:380px) {
@@ -799,6 +806,11 @@ body{
 .bubble-1 {
   left: 250px;
   animation-delay: 1.3s;
+}
+
+.contact {
+	/* height: 280px; */
+	padding: 0 25px;
 }
   }
 
@@ -934,6 +946,10 @@ body{
   }
 
   @media screen and (min-width:500px) {
+
+    .aboutme > p {
+      padding: 5px 15px;
+    }
     .home-icons{
       /* bottom: -250px; */
       left: 20vw;
@@ -1010,7 +1026,6 @@ body{
     .aboutme > p {
       color: var(--white);
       font-weight: 400;
-      text-align: justify;
       font-size: 15px;
       padding: 10px 25px;
     }
@@ -1155,6 +1170,22 @@ body{
 .flx-P {
 	width: 500px;
 }
+
+
+.container-imgs > div.phone, div.mail {
+	width: 200px;
+	height: 200px;
+}
+.container-imgs > div > h3 {
+	font-size: 16px;
+}
+.container-imgs > div > p {
+	font-weight: 400;
+	font-size: 14px;
+
+}
+
+
   }
 
 
@@ -1190,7 +1221,7 @@ body{
         }
 
 
-      .aboutme > h3,  .servicios > h3 , .skills> h3, .portafolio>h3 {
+      .aboutme > h3,  .servicios > h3 , .skills> h3, .portafolio>h3 , .contact>h3{
         font-size: 4vw;
       }
 
@@ -1626,7 +1657,7 @@ padding: 20px 0;  }
 
     .home-photo>.img600px{
       display: none;
-     }
+    }
     .home-photo>.img650px{
       position: absolute;
       z-index: 7;
@@ -1643,13 +1674,9 @@ padding: 20px 0;  }
 
 
   }
+   }
 
 
   
 
-  
-
-  
-
-  
   
