@@ -18,6 +18,7 @@
 body{
     background-color: var(--backgroundColor);
     font-family: var(--fuente);
+    /* position: relative; */
     }
 
   .main-header{
@@ -59,6 +60,7 @@ body{
     justify-content: flex-start;
     font-size: 14px;
     font-weight:400;
+    text-transform: capitalize;
   }
 
   .link-item{
@@ -272,11 +274,12 @@ body{
       display: flex;
       justify-content: space-around;
     }
-    .home-photo>.home-icons>div>.home-icons-hijo {
+    .home-photo>.home-icons>div>a>.home-icons-hijo {
       width: 40px;
       padding: 4px;
       border-radius: 50%;
       opacity: 70%;
+      cursor: pointer;
 
       background-color: var(--white)
     }
@@ -635,7 +638,7 @@ body{
 }
 
 .contact{
-  height: 280px;
+  height: 580px;
 }
 
 
@@ -678,6 +681,39 @@ body{
 .container-imgs>div>img{
   width: 45%;
   }
+
+footer{
+background-color:#93a4b4;
+height: 120px;
+
+  }
+
+  .contenedor-footer{
+  /* height: 100%; */
+  width: 300px;
+  margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  
+  .footer>p{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  
+  .contenedor-footer>a>img{
+    width: 60px;
+    }
+  .contenedor-footer>a>.youtube{
+    width: 50px;
+    opacity: 80%;
+    }
+
+
 
 
 
@@ -1105,6 +1141,10 @@ body{
         padding-left: 60px;
     }
 
+    .home-name > .title {
+      line-height: 50px;
+      /* font-size: 25px; */
+    }
 
     
   }
@@ -1436,7 +1476,7 @@ padding: 20px 0;  }
             .home-photo > .img500px {
               top: 5px;
             }
-    .home-photo > .home-icons > div > .home-icons-hijo {
+    .home-photo > .home-icons > div >a> .home-icons-hijo {
       width: 7vw;
       padding: 8px 30px;
       border-radius: 10px;
